@@ -129,7 +129,7 @@ export default function App() {
 			<View style={{ width: 250 }}>
 				{/* <Text>{details}</Text> */}
 				<View style={{ display: 'flex', marginTop: '1rem', gap: 1, flexDirection: 'column' }}>
-					<Pressable style={{ padding: 10, borderColor: !loading ? '#88d450' : 'transparent', borderStyle: !loading ? 'solid' : 'none', borderWidth: !loading ? 3 : 0, maxWidth: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: 8, flexGrow: 1 }} onPress={pickImage}>
+					<Pressable style={{ padding: 10, maxWidth: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: 8, flexGrow: 1 }} onPress={pickImage}>
 						{image && !loading ? (
 							<>
 								<Image source={{ uri: image }} style={styles.image} />
@@ -162,7 +162,7 @@ export default function App() {
 						)}
 					</Pressable>
 					<Spacer size={16} />
-					<Pressable style={{ padding: 10, marginTop: '1rem', borderColor: '#f37521', borderStyle: 'solid', borderWidth: 3, maxWidth: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: 8, flexGrow: 1 }} onPress={openCamera}>
+					<Pressable style={{ padding: 10, marginTop: '1rem', maxWidth: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: 8, flexGrow: 1 }} onPress={openCamera}>
 						<AntDesign name='camera' size={64} color='#f37521' />
 						<Text style={{ textTransform: 'uppercase', fontSize: 10, fontWeight: 600, color: '#303030' }}>Capture an Image</Text>
 					</Pressable>
